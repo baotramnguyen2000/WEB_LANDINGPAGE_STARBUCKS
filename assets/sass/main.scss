@@ -1,16 +1,14 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import './abstracts/variables';
+@import './base/typography';
+@import './base/base';
+@import './layout/content';
+@import './layout/header';
+@import './pages/home';
+@import './component/btn';
 
-section {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    padding: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #fff;
-}
+
+
+
+
+
+

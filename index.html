@@ -1,24 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Starbuck Landing Page</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-    <section>
-        <header>
-            <a href="#" class="logo">
-                <img src="./assets/img/logo.png" alt="this-is-logo">
-            </a>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">What's New</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </header>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <section class="header">
+      <header class="header_container">
+        <a href="#" class="header_logo">
+          <img
+            src="./assets/img/logo.png"
+            alt="this-is-logo"
+            class="header_logo--main"
+          />
+        </a>
+        <ul class="header_navigation header_navigation--list">
+          <li class="header_navigation--item">
+            <a href="#" class="header_navigation--link">Home</a>
+          </li>
+          <li class="header_navigation--item">
+            <a href="#" class="header_navigation--link">Menu</a>
+          </li>
+          <li class="header_navigation--item">
+            <a href="#" class="header_navigation--link">What's New</a>
+          </li>
+          <li class="header_navigation--item">
+            <a href="#" class="header_navigation--link">Contact</a>
+          </li>
+        </ul>
+      </header>
     </section>
-</body>
+    <section class="content">
+      <div class="content__main">
+        <div class="content__main_headline">
+          <h2>
+            It's not just Coffee <br />
+            It's <span>Starbucks</span>
+          </h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint animi
+            quisquam sunt repellendus officiis natus aliquam sit distinctio
+            illo, sapiente consequatur dolor numquam ratione optio quae possimus
+            odio quia reprehenderit dolorum? Velit. Cumque aliquid nisi, illo
+            maiores.
+          </p>
+          <a href="#" class="btn btn_primary">Learn More</a>
+        </div>
+        <div class="content__main_picture">
+          <img
+            src="./assets/img/img1.png"
+            alt=""
+            class="content__main_picture--main"
+          />
+        </div>
+      </div>
+      <div class="content__sub">
+        <ul class="content_thumb">
+          <li class="content_thumb--item">
+            <img src="./assets/img/thumb1.png" alt="" />
+          </li>
+          <li class="content_thumb--item">
+            <img src="./assets/img/thumb2.png" alt="" />
+          </li>
+          <li class="content_thumb--item">
+            <img src="./assets/img/thumb3.png" alt="" />
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
 </html>

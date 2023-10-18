@@ -1,0 +1,31 @@
+.header {
+    &_container {
+        position: relative;
+        padding: 10px 100px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_logo {
+        position: relative;
+        height: 100px;
+        &--main {
+            object-fit: contain;
+        }
+    }
+    &_navigation {
+        display: flex;
+        align-items: center;
+        &--item {
+            list-style: none;
+        }
+        &--link {
+            display: inline-block;
+            color: $color-brown;
+            font-weight: 500;
+            margin-left: 2rem;
+            text-decoration: none;
+        }
+    }
+}
