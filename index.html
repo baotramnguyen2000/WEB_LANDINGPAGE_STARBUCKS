@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Starbuck Landing Page</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script type="text/javascript"  src="./assets/javascript/script.js"></script>
   </head>
   <body>
-    <section class="header">
-      <header class="header_container">
+    <section class="landing-page">
+      <div class="circle" id="circle"></div>
+      <!-- header contain logo and nav-bar -->
+      <header class="header">
         <a href="#" class="header_logo">
           <img
             src="./assets/img/logo.png"
@@ -16,7 +19,7 @@
             class="header_logo--main"
           />
         </a>
-        <ul class="header_navigation header_navigation--list">
+        <ul class="header_navigation">
           <li class="header_navigation--item">
             <a href="#" class="header_navigation--link">Home</a>
           </li>
@@ -31,10 +34,10 @@
           </li>
         </ul>
       </header>
-    </section>
-    <section class="content">
-      <div class="content__main">
-        <div class="content__main_headline">
+      <!-- end -->
+      <!-- div contain textbox & img -->
+      <div class="content">
+        <div class="content_textBox">
           <h2>
             It's not just Coffee <br />
             It's <span>Starbucks</span>
@@ -48,27 +51,35 @@
           </p>
           <a href="#" class="btn btn_primary">Learn More</a>
         </div>
-        <div class="content__main_picture">
-          <img
-            src="./assets/img/img1.png"
-            alt=""
-            class="content__main_picture--main"
-          />
-        </div>
+        <div class="content_imgBox"><img src="./assets/img/img1.png" class="img_slider" alt="" /></div>
       </div>
-      <div class="content__sub">
-        <ul class="content_thumb">
-          <li class="content_thumb--item">
-            <img src="./assets/img/thumb1.png" alt="" />
-          </li>
-          <li class="content_thumb--item">
-            <img src="./assets/img/thumb2.png" alt="" />
-          </li>
-          <li class="content_thumb--item">
-            <img src="./assets/img/thumb3.png" alt="" />
-          </li>
-        </ul>
-      </div>
+      <!-- end -->
+      <!-- div contain thumnail -->
+      <ul class="thumb">
+        <li class="thumb_item">
+          <img src="./assets/img/thumb1.png" onclick="imgSlider('img1.png');changeBackgroundCircle('#017143')" alt="" />
+        </li>
+        <li class="thumb_item">
+          <img src="./assets/img/thumb2.png" onclick="imgSlider('img2.png');changeBackgroundCircle('#eb7495')" alt="" />
+        </li>
+        <li class="thumb_item">
+          <img src="./assets/img/thumb3.png" onclick="imgSlider('img3.png');changeBackgroundCircle('#d752b1')" alt="" />
+        </li>
+      </ul>
+      <!-- end -->
+      <!-- div contain link social -->
+      <ul class="sci">
+        <li class="sci_icon">
+          <a href="#"><img src="./assets/img/facebook.png" alt="" /></a>
+        </li>
+        <li class="sci_icon">
+          <a href="#"><img src="./assets/img/instagram.png" alt="" /></a>
+        </li>
+        <li class="sci_icon">
+          <a href="#"><img src="./assets/img/twitter.png" alt="" /></a>
+        </li>
+      </ul>
+      <!-- end -->
     </section>
   </body>
 </html>

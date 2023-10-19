@@ -1,16 +1,16 @@
 .btn {
     &:link,
     &:visited {
-        position: relative;
         display: inline-block;
-        background-color: $color-primary;
-        text-decoration: none;
-        color: $color-white;
         margin-top: 20px;
         padding: 8px 20px;
+        background-color: $color-primary;
+        color: $color-white;
         border-radius: 40px;
         font-weight: 500;
         letter-spacing: 1px;
+        text-decoration: none;
+        position: relative;
     }
 
     &:hover {

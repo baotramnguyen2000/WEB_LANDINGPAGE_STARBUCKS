@@ -1,30 +1,30 @@
 .header {
-    &_container {
-        position: relative;
-        padding: 10px 100px;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-    }
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     &_logo {
         position: relative;
-        height: 100px;
-        &--main {
-            object-fit: contain;
-        }
+        height: 80px;
     }
     &_navigation {
+        position: relative;
         display: flex;
-        align-items: center;
+
         &--item {
             list-style: none;
         }
+
         &--link {
             display: inline-block;
             color: $color-brown;
             font-weight: 500;
-            margin-left: 2rem;
+            margin-left: 40px;
             text-decoration: none;
         }
     }
