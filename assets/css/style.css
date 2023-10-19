@@ -64,6 +64,16 @@
 .header_navigation--item {
   list-style: none;
 }
+@media (max-width: 900px) {
+  .header_navigation--item {
+    list-style: none;
+    padding-right: 40px;
+    padding-top: 40px;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: white;
+  }
+}
 .header_navigation--link {
   display: inline-block;
   color: #333;
@@ -71,7 +81,11 @@
   margin-left: 40px;
   text-decoration: none;
 }
-
+@media (max-width: 900px) {
+  .header_navigation--link {
+    color: white;
+  }
+}
 .landing-page {
   position: relative;
   width: 100%;
@@ -171,6 +185,83 @@
   height: 100%;
   background-color: #017143;
   clip-path: circle(600px at right 800px);
+}
+
+.navigation {
+  position: absolute;
+  display: none;
+}
+.navigation_checkbox {
+  display: none;
+}
+.navigation_button {
+  background-color: #017143;
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+  top: 3rem;
+  right: 6rem;
+  border-radius: 50%;
+  z-index: 2000;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
+}
+.navigation_background {
+  background-image: radial-gradient(#017143, #fff);
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 3.5rem;
+  right: 8.5rem;
+  border-radius: 50%;
+  z-index: 1000;
+  transition: transform 0.8s;
+}
+.navigation_icon {
+  position: relative;
+  margin-top: 1.4rem;
+}
+.navigation_icon, .navigation_icon::before, .navigation_icon::after {
+  width: 1.6rem;
+  height: 0.2rem;
+  background-color: #fff;
+  display: inline-block;
+}
+.navigation_icon::before, .navigation_icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+.navigation_icon::before {
+  top: -0.5rem;
+}
+.navigation_icon::after {
+  top: 0.5rem;
+}
+.navigation_checkbox:checked ~ .navigation_background {
+  transform: scale(100);
+}
+.navigation_checkbox:checked + .navigation_button .navigation_icon {
+  background-color: transparent;
+}
+.navigation_checkbox:checked + .navigation_button .navigation_icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+.navigation_checkbox:checked + .navigation_button .navigation_icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+@media (max-width: 900px) {
+  .navigation {
+    display: block;
+    cursor: pointer;
+    right: 2rem;
+    top: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Starbuck Landing Page</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <script type="text/javascript"  src="./assets/javascript/script.js"></script>
+    <script type="text/javascript" src="./assets/javascript/script.js"></script>
   </head>
   <body>
     <section class="landing-page">
@@ -51,19 +51,44 @@
           </p>
           <a href="#" class="btn btn_primary">Learn More</a>
         </div>
-        <div class="content_imgBox"><img src="./assets/img/img1.png" class="img_slider" alt="" /></div>
+        <div class="content_imgBox">
+          <img src="./assets/img/img1.png" class="img_slider" alt="" />
+        </div>
+      </div>
+      <!-- end -->
+      <!-- div contain navigation -->
+      <div class="navigation">
+        <input type="checkbox" id="navi-toggler" class="navigation_checkbox" />
+        <label for="navi-toggler" class="navigation_button">
+          <span class="navigation_icon">
+            &nbsp;
+          </span>
+        </label>
+        <div class="navigation_background">&nbsp;</div>
       </div>
       <!-- end -->
       <!-- div contain thumnail -->
       <ul class="thumb">
         <li class="thumb_item">
-          <img src="./assets/img/thumb1.png" onclick="imgSlider('img1.png');changeBackgroundCircle('#017143')" alt="" />
+          <img
+            src="./assets/img/thumb1.png"
+            onclick="imgSlider('img1.png');changeBackgroundCircle('#017143')"
+            alt=""
+          />
         </li>
         <li class="thumb_item">
-          <img src="./assets/img/thumb2.png" onclick="imgSlider('img2.png');changeBackgroundCircle('#eb7495')" alt="" />
+          <img
+            src="./assets/img/thumb2.png"
+            onclick="imgSlider('img2.png');changeBackgroundCircle('#eb7495')"
+            alt=""
+          />
         </li>
         <li class="thumb_item">
-          <img src="./assets/img/thumb3.png" onclick="imgSlider('img3.png');changeBackgroundCircle('#d752b1')" alt="" />
+          <img
+            src="./assets/img/thumb3.png"
+            onclick="imgSlider('img3.png');changeBackgroundCircle('#d752b1')"
+            alt=""
+          />
         </li>
       </ul>
       <!-- end -->

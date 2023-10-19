@@ -1,0 +1,90 @@
+.navigation {
+    position: absolute;
+    display: none;
+
+    &_checkbox {
+        display: none;
+    }
+
+    &_button {
+        background-color: $color-primary;
+        height: 3rem;
+        width: 3rem;
+        position: absolute;
+        top: 3rem;
+        right: 6rem;
+        border-radius: 50%;
+        z-index: 2000;
+        cursor: pointer;
+        text-align: center;
+        box-shadow: 0 1rem 3rem rgba($color-black, 0.15);
+    }
+    &_background {
+        background-image: radial-gradient($color-primary, $color-white);
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        position: fixed;
+        top: 3.5rem;
+        right: 8.5rem;
+        border-radius: 50%;
+        z-index: 1000;
+        transition: transform 0.8s;
+    }
+    &_icon {
+        position: relative;
+        margin-top: 1.4rem;
+
+        &,
+        &::before,
+        &::after {
+            width: 1.6rem;
+            height: 0.2rem;
+            background-color: $color-white;
+            display: inline-block;
+        }
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all 0.2s;
+        }
+        &::before {
+            top: -0.5rem;
+        }
+        &::after {
+            top: 0.5rem;
+        }
+    }
+
+    &_checkbox:checked ~ &_background {
+        transform: scale(100);
+    }
+    &_checkbox:checked + &_button &_icon {
+        background-color: transparent;
+    }
+
+    &_checkbox:checked + &_button &_icon::before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    &_checkbox:checked + &_button &_icon::after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
+
+    // &_checkbox:checked ~ .header_navigation {
+    //     opacity: 1;
+    //     width: 100%;
+    // }
+
+    @include respond(tab-port) {
+        display: block;
+        cursor: pointer;
+        right: 2rem;
+        top: 0;
+     }
+}
+
